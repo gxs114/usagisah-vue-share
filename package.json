@@ -1,0 +1,35 @@
+{
+  "name": "usagisah-vue-share",
+  "version": "0.0.1",
+  "description": "个人开发 vue 项目的常用工具函数",
+  "keywords": [],
+  "homepage": "https://github.com/gxs114/usagisah-vue-share#readme",
+  "bugs": {
+    "url": "https://github.com/gxs114/usagisah-vue-share/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxs114/usagisah-vue-share.git"
+  },
+  "license": "ISC",
+  "author": "@gxs114/usagisah",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "build:esm": "tsc -p ./tsconfig.esm.json",
+    "format": "prettier --w ./lib/*.ts"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.5",
+    "vue": "^3.2.34"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "prettier-config-usagisah": "^1.0.1"
+  }
+}
